@@ -1,0 +1,23 @@
+@import "../abstracts/variables.scss";
+@import "../base/animations";
+.container {
+  border-bottom: 2px solid $color-main;
+  .navbar {
+    text-align: center;
+    padding: calc($text-padding-h4 * 1.5);
+    .item {
+      display: inline;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: calc($font-size-h4/1.5);
+      padding: calc($text-padding-h4 * 1.5);
+      transition: all ease-in-out 350ms;
+      &:hover {
+        font-weight: 900;
+        font-size: calc($text-padding-h4 * 2.5);
+        color: $color-sub;
+        transition: all ease-in-out 350ms;
+      }
+    }
+  }
+}
